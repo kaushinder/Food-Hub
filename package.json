@@ -1,15 +1,18 @@
 {
-  "name": "namaste-react",
+  "name": "food-hub",
   "version": "1.0.0",
-  "description": "This is Namaste React Series",
+  "description": "Food Hub - A simple React food ordering website.",
+  "homepage": "https://kaushinder.github.io/Food-Hub",
   "scripts": {
-    "start": "parcel index.html",
-    "build": "parcel build index.html",
-    "test": "jest"
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html --public-url ./",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
-  "author": "kaushinder raghav",
-  "license": "ISC",
+  "author": "Kaushinder Singh Raghav",
+  "license": "MIT",
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "parcel": "^2.16.0"
   },
   "dependencies": {
